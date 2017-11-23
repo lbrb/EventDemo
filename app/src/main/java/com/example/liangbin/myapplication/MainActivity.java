@@ -26,12 +26,12 @@ public class MainActivity extends Activity implements View.OnTouchListener, View
 
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
-        Log.d("liangbin", "onTouch: view"+view+", event;"+motionEvent.getAction());
+        Log.d("liangbin", "onTouch: view:"+view.getClass().getSimpleName()+", event;"+motionEvent.getAction());
         return false;
     }
 
     @Override
     public void onClick(View view) {
-        Log.d("liangbin", "onClick: view"+view);
+        Log.d("liangbin", "onClick: view:"+view.getClass().getSimpleName());
     }
 }

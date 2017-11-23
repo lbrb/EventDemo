@@ -19,7 +19,7 @@ public class MyLinerlayout extends LinearLayout {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         Log.d("liangbin", "dispatchTouchEvent: "+ev.getAction()+", view:LinearLayout");
         boolean b = super.dispatchTouchEvent(ev);
-        return b;
+        return true;
     }
 
     @Override
@@ -32,6 +32,6 @@ public class MyLinerlayout extends LinearLayout {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         Log.d("liangbin", "onInterceptTouchEvent: "+ev.getAction()+", view:LinearLayout");
-        return false;
+        return true;
     }
 }
